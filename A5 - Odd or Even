@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		//Input
+		System.out.print("Enter a number integer: ");
+		int integer = input.nextInt();
+		
+	    //This will calculate if the given number will return exactly 0 after dividing it to 2.
+	    double   x = integer / 2.0;
+	    int      y = integer / 2;
+		double answer = x - y;
+	
+		//If the return value is exactly zero then the number is an even,
+		//however if not then it should return odd, else the given input is an Invalid character.
+		if(answer == 0)
+		    System.out.print(integer + " is an Even Number.");
+		else if (answer != 0)
+		    System.out.print(integer + " is an Odd Number.");
+		else
+		    System.out.print("Invalid Character!");
+		
+	}
+}
